@@ -50,9 +50,9 @@
 
 <muleVersion>4.0.0</muleVersion>
 
-<username>${anypoint.username}</username>
+<username>aabid_khan</username>
 
-<password>${anypoint.password}</password>
+<password>Tubelightx1</password>
 
 <applicationName>work_order_management</applicationName>
 
