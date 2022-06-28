@@ -35,6 +35,11 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     
+    - name: Added for debugging
+      run: |
+        ls
+        ls target/
+    
     - name: Stamp artifact file name with commit hash
       run: |
         artifactName1=$(ls target/*.jar | head -1)
