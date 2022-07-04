@@ -4,7 +4,7 @@ name: Build and Deploy to Sandbox
 
 on:
   push:
-    branches: [ main ]
+    branches: [ rajat/feat-cicd ]
   workflow_dispatch:
     
 jobs:
@@ -71,8 +71,8 @@ jobs:
     
     - name: Deploy to Sandbox
       env:
-        USERNAME: ${{ secrets.USERNAME }}
-        PASSWORD: ${{ secrets.PASSWORD }}
+        USERNAME: ${{ secrets.ANYPOINT_PLATFORM_USER }}
+        PASSWORD: ${{ secrets.ANYPOINT_PLATFORM_PASSWORD }}
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn deploy -DmuleDeploy \
