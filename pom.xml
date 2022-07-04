@@ -66,6 +66,8 @@
 										<workers>1</workers>
 
 										<objectStoreV2>true</objectStoreV2>
+											
+											<businessGroup>31151502-3411-4ebb-97ce-17b716604a33</businessGroup>
 
 										</cloudHubDeployment>
 
