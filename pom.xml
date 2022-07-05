@@ -50,9 +50,9 @@
 
 										<muleVersion>4.4.0</muleVersion>
 
-										<username>${env.anypointUsername}</username>
+										<username>${secrets.ANYPOINT_PLATFORM_USER}</username>
 
-										<password>${env.anypointPassword}</password>
+										<password>${secrets.ANYPOINT_PLATFORM_PASSWORD}</password>
 
 										<applicationName>${project.name}</applicationName>
 
@@ -66,7 +66,7 @@
 
 										<objectStoreV2>true</objectStoreV2>
 											
-											<businessGroup>${env.businessGroup}</businessGroup>
+											<businessGroup>${secrets.ANYPOINT_PLATFORM_BUSINESS_GROUPID}</businessGroup>
 
 										</cloudHubDeployment>
 
