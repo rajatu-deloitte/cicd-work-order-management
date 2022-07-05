@@ -13,6 +13,10 @@ jobs:
           uses: actions/cache@v2
           env:
            cache-name: cache-node-modules
+           anypointUsername: ${{ANYPOINT_PLATFORM_USER}}
+           anypointPassword: ${{ANYPOINT_PLATFORM_PASSWORD}}
+           businessGroup: ${{ANYPOINT_PLATFORM_BUSINESS_GROUPID}}
+           
           with:
            # npm cache files are stored in `~/.m2/repository` on Linux/macOS
             path: ~/.m2/repository
